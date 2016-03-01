@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script src="jquery-2.2.0.js"></script>
+<script src="donations.js"></script>
+</head>
+<body>
+
+<h2> Project Creator Section </h2>
+<form>
+Applicant <input type="text" id="GrantApplicant" value=""><br>
+Project Name <input type="text" id="GrantProjectName" value=""><br>
+Project Cost  <input type="number" id="GrantAmount" value=0 name="quantity" min="1" max="100000"><br>
+<button type="button" onclick="applyForGrant()">Add New Project</button>
+
+<div id="projects">
+  <h1>Projects Overview</h1>
+  <table id="projectTable" style="width:100%" border="1">
+  	<tbody>
+		<tr>
+			<th>Applicant</th>
+			<th>Project Name</th>
+			<th>Project Cost</th>
+			<th>Donate</th>
+			<th>Who Donated?</th>
+		</tr>
+	</tbody>
+  </table>
+</div>
+</form>
+
+<h2> Utilities Section </h2>
+
+<button type="button" onclick="deleteDonations()">Delete Only Donations</button>
+<p>
+<button type="button" onclick="deleteProjects()">Delete All Projects and Donations</button>
+
+</body>
+</html>
